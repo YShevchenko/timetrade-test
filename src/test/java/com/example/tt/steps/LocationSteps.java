@@ -10,7 +10,7 @@ public class LocationSteps {
         this.locationPage = locationPage;
     }
 
-    public void searchLocation(final String location){
+    public void searchLocation(final String location) {
         locationPage.setSearchLocationInput(location);
     }
 

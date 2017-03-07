@@ -6,12 +6,12 @@ public class CalendarSteps {
 
     private CalendarPage calendarPage;
 
-    public CalendarSteps (final CalendarPage calendarPage) {
+    public CalendarSteps(final CalendarPage calendarPage) {
         this.calendarPage = calendarPage;
     }
 
-    public void selectAppointmentDateTime(final String date, final String time) {
-        calendarPage.setDateTime(date, time);
+    public void selectAppointmentDate(final String date) {
+        calendarPage.setDateAndEarliestTime(date);
         calendarPage.clickNextButton();
     }
 

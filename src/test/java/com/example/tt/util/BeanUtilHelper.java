@@ -1,8 +1,8 @@
 package com.example.tt.util;
 
-import org.apache.commons.beanutils.BeanUtils;
-
 import java.lang.reflect.InvocationTargetException;
+
+import org.apache.commons.beanutils.BeanUtils;
 
 public class BeanUtilHelper {
 

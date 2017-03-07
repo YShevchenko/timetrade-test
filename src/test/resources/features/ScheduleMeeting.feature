@@ -10,7 +10,7 @@ Feature: Schedule an event
     And fills in following contact info:
     | firstName | lastName | email            |
     | John      | Densmore | user@example.com |
-    And selects tomorrow date and '9:00 AM' time
+    And selects tomorrow date and earliest time
     Then following appointment is scheduled:
-    | programType      | appointmentType | resource         | firstName | lastName | email            |
-    | 20th Century Fox | Alien           | Sigourney Weaver | John      | Densmore | user@example.com |
+    |Location                                              | programType      | appointmentType | resource         | name          | email            |
+    |Ames Pond 100 Ames Pond Tewksbury, MA 01876 9786546828| 20th Century Fox | Alien           | Sigourney Weaver | John Densmore | user@example.com |

@@ -1,10 +1,11 @@
 package com.example.tt.step_definitions;
 
+import java.util.List;
+
 import com.example.tt.dto.AppointmentDto;
 import com.example.tt.steps.CommonAppointmentSteps;
-import cucumber.api.java.en.When;
 
-import java.util.List;
+import cucumber.api.java.en.When;
 
 public class CommonAppointmentDefinitions {
 

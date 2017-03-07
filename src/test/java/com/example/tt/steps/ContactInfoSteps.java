@@ -1,8 +1,8 @@
 package com.example.tt.steps;
 
-import com.example.tt.util.BeanUtilHelper;
 import com.example.tt.dto.ContactInfoDto;
 import com.example.tt.pages.ContactInfoPage;
+import com.example.tt.util.BeanUtilHelper;
 
 public class ContactInfoSteps {
 

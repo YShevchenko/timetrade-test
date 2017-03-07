@@ -10,13 +10,13 @@ public class CalendarDefinitions {
 
     private CalendarSteps calendarSteps;
 
-    public CalendarDefinitions(final CalendarSteps calendarSteps){
+    public CalendarDefinitions(final CalendarSteps calendarSteps) {
         this.calendarSteps = calendarSteps;
     }
 
-    @When("^(?:user |)selects tomorrow date and '(.*)' time$")
-    public void selectDateTime(final String time) {
+    @When("^(?:user |)selects tomorrow date and earliest time$")
+    public void selectDateTime() {
         final String tomorrow = LocalDate.now().toString();
-        calendarSteps.selectAppointmentDateTime(tomorrow, time);
+        calendarSteps.selectAppointmentDate(tomorrow);
     }
 }

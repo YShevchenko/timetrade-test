@@ -6,7 +6,7 @@ public class CommonAppointmentSteps {
 
     private CommonAppointmentPage commonAppointmentPage;
 
-    public CommonAppointmentSteps(CommonAppointmentPage commonAppointmentPage){
+    public CommonAppointmentSteps(CommonAppointmentPage commonAppointmentPage) {
         this.commonAppointmentPage = commonAppointmentPage;
     }
 
