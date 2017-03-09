@@ -18,7 +18,7 @@ public abstract class AbstractPage {
         driver = Hooks.driver;
     }
 
-    public void open(final String url) {
+    public void openUrl(final String url) {
         driver.get(url);
     }
 
