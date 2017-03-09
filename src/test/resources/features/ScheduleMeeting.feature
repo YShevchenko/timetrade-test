@@ -1,6 +1,6 @@
-Feature: Schedule an event
+Feature: Schedule an appointment
 
-  Scenario: Schedule am event
+  Scenario: Schedule an appointment
     Given user is navigated to url 'https://nc1stage01.timetradesystems.com/app/app2devauto/workflows/automationqa/schedule'
     When user looks for locations near 'Boxborough, MA, United States'
     And selects location 'westford-test'
@@ -12,5 +12,10 @@ Feature: Schedule an event
     | John      | Densmore | user@example.com |
     And selects tomorrow date and earliest time
     Then following appointment is scheduled:
-    |Location                                              | programType      | appointmentType | resource         | name          | email            |
-    |Ames Pond 100 Ames Pond Tewksbury, MA 01876 9786546828| 20th Century Fox | Alien           | Sigourney Weaver | John Densmore | user@example.com |
+    | location          | westford-test    |
+    | appointmentType   | Alien            |
+    | programType       | 20th Century Fox |
+    | resource          | Sigourney Weaver |
+    And following contact information is saved:
+    | firstName | lastName | email            |
+    | John      | Densmore | user@example.com |

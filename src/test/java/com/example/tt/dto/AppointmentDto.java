@@ -5,6 +5,7 @@ public class AppointmentDto {
     private String programType;
     private String appointmentType;
     private String resource;
+    private String location;
 
     public String getProgramType() {
         return programType;
@@ -28,5 +29,13 @@ public class AppointmentDto {
 
     public void setResource(final String resource) {
         this.resource = resource;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(final String location) {
+        this.location = location;
     }
 }

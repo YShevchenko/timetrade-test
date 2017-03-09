@@ -41,6 +41,11 @@ public abstract class AbstractPage {
         actions.moveToElement(getDriver().findElement(locator)).click().sendKeys(text).build().perform();
     }
 
+    protected String getElementText(final By locator) {
+        waitForElementPresent(locator);
+        return getDriver().findElement(locator).getText().trim();
+    }
+
     protected WebDriver getDriver() {
         return driver;
     }

@@ -16,7 +16,7 @@ public class CalendarDefinitions {
 
     @When("^(?:user |)selects tomorrow date and earliest time$")
     public void selectDateTime() {
-        final String tomorrow = LocalDate.now().toString();
+        final String tomorrow = LocalDate.now().plusDays(1).toString();
         calendarSteps.selectAppointmentDate(tomorrow);
     }
 }
