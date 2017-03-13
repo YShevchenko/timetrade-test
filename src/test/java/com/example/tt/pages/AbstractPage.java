@@ -11,12 +11,8 @@ import com.example.tt.Hooks;
 
 public abstract class AbstractPage {
 
-    private WebDriver driver;
+    private WebDriver driver = Hooks.getDriver();
     private static final Long TIMEOUT = 30L;
-
-    AbstractPage() {
-        driver = Hooks.driver;
-    }
 
     public void openUrl(final String url) {
         driver.get(url);

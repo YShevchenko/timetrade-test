@@ -8,16 +8,22 @@ import cucumber.api.java.Before;
 
 public class Hooks {
 
-    public static WebDriver driver;
+    private static WebDriver driver;
 
     @Before
-    public void openBrowser() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+    public void maximizeBrowser() {
+        getDriver().manage().window().maximize();
     }
 
     @After
     public void closeBrowser() {
-        driver.quit();
+        getDriver().quit();
+    }
+
+    public static WebDriver getDriver() {
+        if (driver == null) {
+            driver = new ChromeDriver();
+        }
+        return driver;
     }
 }
